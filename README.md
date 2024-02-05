@@ -1,0 +1,1 @@
+In this repo I'm going to record my leetCode journey. Cheers!!!
