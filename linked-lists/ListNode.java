@@ -1,13 +1,13 @@
-public class myLinkedList{
+public class ListNode{
     int val;
-    myLinkedList next;
+    ListNode next;
 
-    myLinkedList(){}
-    myLinkedList(int val){
+    ListNode(){}
+    ListNode(int val){
         this.val = val;
     }
     
-    myLinkedList(int val, myLinkedList next){
+    ListNode(int val, ListNode next){
         this.val = val;
         this.next = next;
     }
