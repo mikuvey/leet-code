@@ -1,4 +1,4 @@
-package DSA.Graphs.Algorithms;
+
 
 class QuickFind{
     
@@ -43,6 +43,7 @@ class QuickFind{
     }
 
     public static void main(String[] args){
+        long start = System.nanoTime(); //Calculate the runtime
         QuickFind qf = new QuickFind( 10);
 
         System.out.println(qf.find(1));
@@ -55,6 +56,9 @@ class QuickFind{
         qf.union(0,9);
         qf.union(9,8);
         System.out.println(qf.connected(1,8));
+
+        long duration = System.nanoTime() - start;
+        System.out.println(duration);
 
     }
 }
