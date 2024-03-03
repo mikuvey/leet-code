@@ -2,7 +2,7 @@ package DSA.Graphs.Algos.DFS;
 
 import java.util.*;
 
-class FindPath797 {
+class FindPath1971 {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         //I have to use DFS to find the valid path between given vertices
         /*DFS: We use either internal stack/ Stack to perform this algorithm
