@@ -1,5 +1,6 @@
 class Solution {
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
+        //Take aways: While deleaing with complex lists try to keep it as simple as possible else we will run into errors
         /*Theory:
         1. DS: Que, Lists<lists>, 
         2. So it's like this:
@@ -11,7 +12,7 @@ class Solution {
         List<List<Integer>> paths = new ArrayList<>();
         
         Queue<List<Integer>> que = new LinkedList<>();
-        que.add(new ArrayList<>(Arrays.asList(0)));
+        que.add(new ArrayList<>(Arrays.asList(0))); //Use 0 directyly
         
         while(!que.isEmpty()){
             List<Integer> path = que.remove();
@@ -27,7 +28,7 @@ class Solution {
             //Iterate over all the neighbor of current node and 
             //Create a list in each iteration and add them to the que
             for(int i: graph[curr]){
-                List<Integer> newPath = new ArrayList<>(path);
+                List<Integer> newPath = new ArrayList<>(path); //Create new List 
                 newPath.add(i);
                 que.add(newPath);
             }
