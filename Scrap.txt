@@ -1,0 +1,60 @@
+class Solution {
+    public String multiply(String num1, String num2) {
+        //We can't use Big integer lib, but we could use ascii conversions right
+        //Convert given integers to char
+        
+        //Edge Case
+        if(num1.equals("0") || num2.equals("0")){
+            return "0";
+        }
+        
+        int n1 = StringToInt(num1);
+        int n2 = StringToInt(num2);
+        
+        int prod = n1*n2;
+        System.out.println(prod);
+        
+        return IntToString(prod);
+    }
+    
+    //String to Integer
+    public int StringToInt(String str){
+        char[] charArr = str.toCharArray();
+        int len = str.length();
+        int degree = 1;
+        
+        for(int i=1; i<len; i++){
+            degree *= 10;
+        }
+        
+        int result = 0;
+        
+        for(char i: charArr){
+            char zero = '0';
+            int num = (int) i - (int)zero;
+            
+            num = num*degree;
+            result += num;
+            
+            degree /= 10;
+        }
+        
+        return result;
+    }
+    
+    //Integer to String
+    public String IntToString(int num){
+        StringBuilder sb = new StringBuilder();
+        
+        while(num > 0){
+            char zero = '0';
+            int rem = num % 10;
+            char charRem = (char)((int)zero + rem);
+            sb.append(rem);
+            
+            num /= 10;
+        }
+        sb.reverse();
+        return sb.toString();
+    }
+}
