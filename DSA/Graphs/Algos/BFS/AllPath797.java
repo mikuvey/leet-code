@@ -4,7 +4,7 @@ class Solution {
         /*Theory:
         1. DS: Que, Lists<lists>, 
         2. So it's like this:
-        3. In every iteration of Que I should should store lists and check if we found the target 
+        3. In every iteration of Que I should store lists and check if we found the target 
         4. Else add it back to the list with current elements neighbors
         5. Eventually hoping the list will return atleast one path if the target exists */
         int len = graph.length;

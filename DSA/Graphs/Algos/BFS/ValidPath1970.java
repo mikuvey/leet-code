@@ -2,7 +2,7 @@
 class Solution {
     public boolean validPath(int n, int[][] edges, int source, int destination) {
         /*
-        Algorithm(BFS):
+        Algorithm(BFS): (Shortest Path)
         1. Given edges, number of nodes, source and destination I should validate if there's a path
         2. Decalre a Queue; Add the source to the queue.
         3. While Queue is not empty:
