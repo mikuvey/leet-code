@@ -18,6 +18,13 @@ Sometimes it could be difficult to approach a problem from above DP characterist
 
     a. First Characteristic: Most of the DP problem asks for "Extremes"
     i.e. Longest/Shortest/ Maximum/ minimum/ Highest or lowest kind of terms could be seen in the problem. 
+    Example:
+    -> What is the minimum cost of doing...
+    -> What is the maximum profit from...
+    -> How many ways are there to do...
+    -> What is the longest possible...
+    -> Is it possible to reach a certain point...
+
     b. Second Characteristic: Decisions at each step matters
     i.e. If a decision at a given step impacts the result then it's a DP problem.
 
@@ -51,3 +58,9 @@ Imagine if nums contained 10, 000 numbers instead.
 ## Observartion:
 
 When you're solving a problem on your own and trying to decide if the second characteristic is applicable, assume it isn't, then try to think of a counterexample that proves a greedy algorithm won't work. If you can think of an example where earlier decisions affect future decisions, then DP is
+
+# Framework to Solve DP Questions
+
+Step 1: Define the State Variable -> A state Variable is the value we would like to store and reuse identify those variables a form a DP data structure (array or HashMap)
+Step 2: Deduce the recurrence Relationship
+Step 3: Use either Bottom up or Top Down Approach
