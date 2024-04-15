@@ -61,6 +61,33 @@ When you're solving a problem on your own and trying to decide if the second cha
 
 # Framework to Solve DP Questions
 
-Step 1: Define the State Variable -> A state Variable is the value we would like to store and reuse identify those variables a form a DP data structure (array or HashMap)
-Step 2: Deduce the recurrence Relationship
-Step 3: Use either Bottom up or Top Down Approach
+    Step 1: Define the State Variable -> A state Variable is the value we would like to store and reuse identify those variables a form a DP data structure (array or HashMap)
+    Step 2: Deduce the recurrence Relationship
+    Step 3: Use either Bottom up or Top Down Approach
+
+## 1. State
+
+In DP before we start solving a problem, we need to decide which is the state variable. 
+-> Simply put I should ask myself, on which variable am I taking decisions on? -> State Variable
+-> For example in house robber I'm deciding on the houses index (Assuming we are given array as input).
+-> Every unique value of represents a unique state.
+-> Note: There could be multiple state variables
+
+### Good Analogy:
+
+You might be wondering what "relevant" means here. Picture this problem in real life: you are on a set of stairs, and you want to know how many ways there are to climb to say, the 10th step. We're definitely interested in what step you're currently standing on. However, we aren't interested in what color your socks are. You could certainly include sock color as a state variable. Standing on the 8th step wearing green socks is a different state than standing on the 8th step wearing red socks. However, changing the color of your socks will not change the number of ways to reach the 10th step from your current position. Thus the color of your socks is an irrelevant variable. In terms of figuring out how many ways there are to climb the set of stairs, the only relevant variable is what stair you are currently on.
+
+## 2. Recurrence Relationship:
+
+A recurrence relation is an equation that relates different states with each other. Let's say that we needed to find how many ways we can climb to the 30th stair. Well, the problem states that we are allowed to take either 1 or 2 steps at a time. Logically, that means to climb to the 30th stair, we arrived from either the 28th or 29th stair. Therefore, the number of ways we can climb to the 30th stair is equal to the number of ways we can climb to the 28th stair plus the number of ways we can climb to the 29th stair.
+
+The problem is, we don't know how many ways there are to climb to the 28th or 29th stair. However, we can use the logic from above to define a recurrence relation. In this case, 
+    dp(i) = dp(i - 1) + dp(i - 2)
+    dp(i) = dp(i - 1) + dp(i - 2)
+As you can see, information about some states gives us information about other states.
+
+## 3. Base Case
+
+The equation on its own will continue forever to negative infinity. We need base cases so that the function will eventually return an actual number.
+
+Finding the base cases is often the easiest part of solving a DP problem, and just involves a little bit of logical thinking.
