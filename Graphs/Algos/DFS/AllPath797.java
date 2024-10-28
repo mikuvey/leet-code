@@ -1,4 +1,4 @@
-package DSA.Graphs.Algos.DFS;
+package graphs.algos.dfs
 
 import java.util.*;
 class Solution {

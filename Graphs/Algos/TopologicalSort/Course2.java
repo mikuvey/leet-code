@@ -1,3 +1,6 @@
+package graphs.algos.topologicalsort;
+package graphs.algos.TopologicalSort;
+package graphs.Algos.TopologicalSort;
 class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         //Create a Adjacency List out of the preReqs

@@ -1,4 +1,4 @@
-package DSA.Graphs;
+package graphs;
 
 class ValidTree {
     public boolean validTree(int n, int[][] edges) {

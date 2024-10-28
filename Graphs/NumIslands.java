@@ -1,3 +1,4 @@
+package graphs;
 class Solution {
     public int numIslands(char[][] grid) {
         int islands = 0;

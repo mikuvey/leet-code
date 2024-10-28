@@ -1,3 +1,6 @@
+package graphs.algos.dfs;
+package graphs.algos.DFS;
+package graphs.Algos.DFS;
 /*
 // Definition for a Node.
 class Node {

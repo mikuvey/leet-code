@@ -1,3 +1,4 @@
+package graphs.algos.bfs;
 class Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         //Creating a adjacency List to build a graph Structure

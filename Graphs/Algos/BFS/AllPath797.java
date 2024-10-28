@@ -1,3 +1,6 @@
+package graphs.algos.bfs;
+package graphs.algos.BFS;
+package graphs.Algos.BFS;
 class Solution {
     public List<List<Integer>> allPathsSourceTarget(int[][] graph) {
         //Take aways: While deleaing with complex lists try to keep it as simple as possible else we will run into errors

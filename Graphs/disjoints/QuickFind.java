@@ -1,4 +1,4 @@
-package Graphs.disjoints;
+package graphs.disjoints;
 
 public class QuickFind {
     
@@ -12,6 +12,10 @@ public class QuickFind {
         for(int i=0; i<size; i++){
             disjointSet[i] = i;
         }
+    }
+
+    public int find(int x){
+        return disjointSet[x];
     }
 
     public void union(int x, int y){
@@ -31,10 +35,5 @@ public class QuickFind {
     public boolean connected(int x, int y){
         if(disjointSet[x] == disjointSet[y]) return true;
         return false;
-    }
-    public statc void main(String[] args){
-        //Given a graph -> Transform it into disjontset using Union method then we are all set
-        QuickFind qf = new QuickFind();
-        
     }
 }

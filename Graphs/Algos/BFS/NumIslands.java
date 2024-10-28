@@ -1,3 +1,6 @@
+package graphs.algos.bfs;
+package graphs.algos.bfs;
+package graphs.algos.bfs;
 class Solution {
     public int numIslands(char[][] grid) {
         //Using BFS
