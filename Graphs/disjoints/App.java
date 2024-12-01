@@ -1,9 +1,10 @@
 package graphs.disjoints;
 import graphs.disjoints.QuickFind;
 
-public class QuickFindTest {
+public class App {
     public static void main(String[] args) throws Exception {
-        QuickFind uf = new QuickFind(10);
+        // QuickFind uf = new QuickFind(10);
+        QuickUnion uf = new QuickUnion(10);
         // 1-2-5-6-7 3-8-9 4
         uf.union(1, 2);
         uf.union(2, 5);
